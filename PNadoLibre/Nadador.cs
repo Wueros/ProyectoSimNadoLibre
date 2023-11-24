@@ -21,6 +21,8 @@ namespace PNadoLibre
             tim.Interval = 100;
             tim.Tick += Tim_Tick;
             tim.Stop();
+            TimNad = true;
+
         }
         private Image ImageNadadorReposo;
 

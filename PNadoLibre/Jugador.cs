@@ -55,6 +55,7 @@ namespace PNadoLibre
         int y = 60;
         public void CrearNadador(Image NadadorImg,Image NadadorAnim)
         {
+
                 y *= (PlayerNum-1);
                 PlayerNadador = new Nadador(NadadorImg, NadadorAnim, y+20, 100, 60);
         }

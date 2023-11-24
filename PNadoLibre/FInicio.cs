@@ -49,9 +49,9 @@ namespace PNadoLibre
             BStarGame.Enabled = true;
 
         }
-        private void Fp_LoginPlayer(int NumPlayer,Color PlayerColor, string PlayerName,Image PlayerNadadorImg)
+        private void Fp_LoginPlayer(int NumPlayer,Color PlayerColor, string PlayerName,Image PlayerNadadorImg,Image PlayerNadadorAnima)
         {
-            PlayersList.Add(new Jugador(PlayerName,PlayerColor, NumPlayer, PlayerNadadorImg));
+            PlayersList.Add(new Jugador(PlayerName,PlayerColor, NumPlayer, PlayerNadadorImg, PlayerNadadorAnima));
         }
     }
 }

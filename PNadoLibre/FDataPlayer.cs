@@ -12,7 +12,7 @@ namespace PNadoLibre
 {
     public partial class FDataPlayer : Form
     {
-        public delegate void Login( int NumPlayer ,Color PlayerColor, String PlayerName,Image NadadorImg);
+        public delegate void Login( int NumPlayer ,Color PlayerColor, String PlayerName,Image NadadorImg, Image PlayerNadadorAnima);
         public event Login LoginPlayer;
         Bitmap ImageColors;
         int NumPlayer;
@@ -40,6 +40,18 @@ namespace PNadoLibre
             PlayerColor = ImageColors.GetPixel(e.X, e.Y);
             ImagenPersonaje();
         }
+        public Image AnimacionPersonaje()
+        {
+           if (PlayerColor == Colores[0]) return PNadoLibre.Properties.Resources.NadadorAzul;
+            else if (PlayerColor == Colores[1]) return PNadoLibre.Properties.Resources.NadadorVerde;
+            else if (PlayerColor == Colores[2]) return PNadoLibre.Properties.Resources.NadadorRojo1;
+            else if (PlayerColor == Colores[3]) return PNadoLibre.Properties.Resources.NadadorCian;
+            else if (PlayerColor == Colores[4]) return PNadoLibre.Properties.Resources.NadadorOrange;
+            else if (PlayerColor == Colores[5]) return PNadoLibre.Properties.Resources.NadadorMorado;
+            else if (PlayerColor == Colores[6]) return PNadoLibre.Properties.Resources.NadadoraAmarillo;
+            else if (PlayerColor == Colores[7]) return PNadoLibre.Properties.Resources.NadadorRosa;
+            else return PNadoLibre.Properties.Resources.NadadorAzul;
+        }
         public void ImagenPersonaje()
         {
             if (PlayerColor == Colores[0]) PBNadador.Image = PNadoLibre.Properties.Resources.NadadorAzul;
@@ -55,7 +67,7 @@ namespace PNadoLibre
         private void BAcept_Click(object sender, EventArgs e)
         {
             if(TBPlayerName.Text == String.Empty) TBPlayerName.Text = LPlayerInTurn.Text;
-            LoginPlayer(NumPlayer,PlayerColor, TBPlayerName.Text, PBNadador.Image);
+            LoginPlayer(NumPlayer,PlayerColor, TBPlayerName.Text, PBNadador.Image,AnimacionPersonaje());
             Close();
         }
     }

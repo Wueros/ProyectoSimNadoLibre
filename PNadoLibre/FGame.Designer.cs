@@ -46,17 +46,19 @@ namespace PNadoLibre
             // 
             // LbPosicionJug
             // 
+            this.LbPosicionJug.Font = new System.Drawing.Font("OCR A Extended", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbPosicionJug.FormattingEnabled = true;
+            this.LbPosicionJug.ItemHeight = 25;
             this.LbPosicionJug.Location = new System.Drawing.Point(27, 12);
             this.LbPosicionJug.Name = "LbPosicionJug";
-            this.LbPosicionJug.Size = new System.Drawing.Size(204, 290);
+            this.LbPosicionJug.Size = new System.Drawing.Size(204, 279);
             this.LbPosicionJug.TabIndex = 1;
             // 
             // BLanzar
             // 
             this.BLanzar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BLanzar.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BLanzar.Location = new System.Drawing.Point(751, 690);
+            this.BLanzar.Location = new System.Drawing.Point(812, 690);
             this.BLanzar.Name = "BLanzar";
             this.BLanzar.Size = new System.Drawing.Size(283, 72);
             this.BLanzar.TabIndex = 0;
@@ -66,14 +68,14 @@ namespace PNadoLibre
             // 
             // pd2
             // 
-            this.pd2.Location = new System.Drawing.Point(934, 575);
+            this.pd2.Location = new System.Drawing.Point(995, 575);
             this.pd2.Name = "pd2";
             this.pd2.Size = new System.Drawing.Size(100, 100);
             this.pd2.TabIndex = 4;
             // 
             // Pd1
             // 
-            this.Pd1.Location = new System.Drawing.Point(761, 575);
+            this.Pd1.Location = new System.Drawing.Point(822, 575);
             this.Pd1.Name = "Pd1";
             this.Pd1.Size = new System.Drawing.Size(100, 100);
             this.Pd1.TabIndex = 5;
@@ -82,7 +84,7 @@ namespace PNadoLibre
             // 
             this.LTurno.AutoSize = true;
             this.LTurno.Font = new System.Drawing.Font("OCR A Extended", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LTurno.Location = new System.Drawing.Point(20, 690);
+            this.LTurno.Location = new System.Drawing.Point(306, 575);
             this.LTurno.Name = "LTurno";
             this.LTurno.Size = new System.Drawing.Size(391, 37);
             this.LTurno.TabIndex = 6;
@@ -92,7 +94,7 @@ namespace PNadoLibre
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("OCR A Extended", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1204, 575);
+            this.label2.Location = new System.Drawing.Point(1265, 575);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 37);
             this.label2.TabIndex = 7;
@@ -102,7 +104,7 @@ namespace PNadoLibre
             // 
             this.LDistancia.AutoSize = true;
             this.LDistancia.Font = new System.Drawing.Font("OCR A Extended", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LDistancia.Location = new System.Drawing.Point(1291, 638);
+            this.LDistancia.Location = new System.Drawing.Point(1352, 638);
             this.LDistancia.Name = "LDistancia";
             this.LDistancia.Size = new System.Drawing.Size(39, 37);
             this.LDistancia.TabIndex = 8;
@@ -123,7 +125,7 @@ namespace PNadoLibre
             this.PPicina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PPicina.Location = new System.Drawing.Point(237, 0);
             this.PPicina.Name = "PPicina";
-            this.PPicina.Size = new System.Drawing.Size(1550, 530);
+            this.PPicina.Size = new System.Drawing.Size(1650, 530);
             this.PPicina.TabIndex = 0;
             this.PPicina.Paint += new System.Windows.Forms.PaintEventHandler(this.PPicina_Paint);
             // 
@@ -137,7 +139,7 @@ namespace PNadoLibre
             // 
             this.LResDados.AutoSize = true;
             this.LResDados.Font = new System.Drawing.Font("OCR A Extended", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LResDados.Location = new System.Drawing.Point(867, 561);
+            this.LResDados.Location = new System.Drawing.Point(928, 561);
             this.LResDados.Name = "LResDados";
             this.LResDados.Size = new System.Drawing.Size(0, 37);
             this.LResDados.TabIndex = 9;
@@ -146,7 +148,7 @@ namespace PNadoLibre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1884, 774);
+            this.ClientSize = new System.Drawing.Size(1894, 774);
             this.Controls.Add(this.LResDados);
             this.Controls.Add(this.LDistancia);
             this.Controls.Add(this.LTurno);

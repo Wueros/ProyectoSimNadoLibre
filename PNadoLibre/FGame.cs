@@ -27,11 +27,11 @@ namespace PNadoLibre
             foreach (Jugador jug in AllPlayers)
             {
                 PPicina.Controls.Add(jug.PlayerNadador);
-                LbPosicionJug.Items.Add(jug.PlayerName);
             }
             PlayerInTurn = AllPlayers[0];
-            PbImgNadador.Image = PlayerInTurn.PlayerNadador.ImageNadadorEnReposo;
             CambiarDataPlayer();
+
+            PbImgNadador.Image = PlayerInTurn.PlayerNadador.ImageNadadorEnReposo;
         }
         int j;
         private void TIdentificador_Tick(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace PNadoLibre
                 j++;
                 if (j == 1)
                 {
-                    PlayerInTurn.PlayerNadador.Avanzar((D1.Pv + D2.Pv) * 31, (PPicina.Width-100), PlayerInTurn, LDistancia);
+                    PlayerInTurn.PlayerNadador.Avanzar((D1.Pv + D2.Pv) * 31, (PPicina.Width - 100), PlayerInTurn, LDistancia);
                     j++;
                 }
                 if (!PlayerInTurn.PlayerNadador.TimNad)
@@ -54,7 +54,7 @@ namespace PNadoLibre
                     PlayerInTurn.PlayerNadador.TimNad = true;
                     IdentificarPosiciones();
                 }
-             
+
             }
 
         }
@@ -66,7 +66,7 @@ namespace PNadoLibre
 
         public void IdentificarPosiciones()
         {
-            
+
         }
         private void BLanzar_Click(object sender, EventArgs e)
         {
@@ -74,36 +74,41 @@ namespace PNadoLibre
             D1.Lanzar();
             D2.Lanzar();
             BLanzar.Enabled = false;
-                j = 0;
+            j = 0;
             TIdentificador.Start();
-        }
-        public void CambiarTurno()
-        {
-            Jugador PlayerSiguinte=null;
-            for (int i = 0; i < AllPlayers.Count; i++)
-            {
-                if (AllPlayers[i] == PlayerInTurn)
-                {
-                    if (i == AllPlayers.Count-1)
-                        PlayerSiguinte = AllPlayers[0];
-                    else
-                        PlayerSiguinte = AllPlayers[i + 1];
-                }
-            }
-            PlayerInTurn = PlayerSiguinte;
         }
 
         private void FGame_Load(object sender, EventArgs e)
         {
 
         }
-
+        #region Metodos
         public void CambiarDataPlayer()
         {
             LDistancia.Text = (PlayerInTurn.PlayerDistance / 31).ToString() + "m";
             LResDados.Text = "";
             LTurno.Text = PlayerInTurn.PlayerName;
             PbImgNadador.Image = PlayerInTurn.PlayerNadador.ImageNadadorEnReposo;
+            foreach (Jugador jug in AllPlayers)
+                LbPosicionJug.Items.Add(jug.PlayerName + " --- " + (jug.PlayerDistance / 31).ToString());
+
         }
+        public void CambiarTurno()
+        {
+            Jugador PlayerSiguinte = null;
+            for (int i = 0; i < AllPlayers.Count; i++)
+            {
+                if (AllPlayers[i] == PlayerInTurn)
+                {
+                    if (i == AllPlayers.Count - 1)
+                        PlayerSiguinte = AllPlayers[0];
+                    else
+                        PlayerSiguinte = AllPlayers[i + 1];
+                }
+            }
+            LbPosicionJug.Items.Clear();
+            PlayerInTurn = PlayerSiguinte;
+        }
+        #endregion
     }
 }
