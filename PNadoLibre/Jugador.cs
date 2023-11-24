@@ -44,19 +44,19 @@ namespace PNadoLibre
             get { return nadador; }
             set { nadador = value; }
         }
-        public Jugador(string NamePlayer,Color colorPlayer,int numPlayer,Image nadadorImg)
+        public Jugador(string NamePlayer,Color colorPlayer,int numPlayer,Image nadadorReposImg,Image NadadorAnimation)
         {
             PlayerName = NamePlayer;
             PlayerColor = colorPlayer;
             PlayerNum = numPlayer;
             PlayerDistance = 0;
-            CrearNadador(nadadorImg);
+            CrearNadador(nadadorReposImg,NadadorAnimation);
         }
-        public void CrearNadador(Image NadadorImg)
+        int y = 60;
+        public void CrearNadador(Image NadadorImg,Image NadadorAnim)
         {
-            int  y = 60;
-            y *= PlayerNum+10;
-            PlayerNadador = new Nadador(NadadorImg, y, 100, 60);
+                y *= (PlayerNum-1);
+                PlayerNadador = new Nadador(NadadorImg, NadadorAnim, y+20, 100, 60);
         }
     }
 }

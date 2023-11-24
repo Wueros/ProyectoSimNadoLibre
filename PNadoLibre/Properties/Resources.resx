@@ -118,37 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="NadadorRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NadadorRojo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NadadorRojo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NadadorRojo1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\R.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NadadoraAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NadadoraAmarillo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SeleccionadorColores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SeleccionadorColores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NadadorAzul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NadadorAzul.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NadadorRojo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NadadorRojo1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NadadorCian" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NadadorCian.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="NadadorMorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NadadorMorado.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NadadorOrange" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NadadorOrange.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NadadorRosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NadadorRosa.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="NadadorVerde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NadadorVerde.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SeleccionadorColores" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SeleccionadorColores.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NadadoraAmarillo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NadadoraAmarillo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NadadorMorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NadadorMorado.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NadadorRojo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NadadorRojo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NadadorRosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NadadorRosa.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Agua1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Agua.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

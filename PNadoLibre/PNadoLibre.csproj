@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dado.cs" />
+    <Compile Include="Dado.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FDataPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +137,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SeleccionadorColores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agua.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
